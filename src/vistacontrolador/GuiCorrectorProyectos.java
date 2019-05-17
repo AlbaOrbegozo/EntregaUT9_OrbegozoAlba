@@ -258,7 +258,7 @@ public class GuiCorrectorProyectos extends Application
 			for (Entry<String, Proyecto> entrada : ordenados) {
 				String alumno = entrada.getKey();
 				Proyecto proyecto = entrada.getValue();
-				areaTexto.setText(alumno.toUpperCase() + "\n" + proyecto.toString());
+				areaTexto.appendText(alumno.toUpperCase() + "\n" + proyecto.toString());
 			}
 		}
 			cogerFoco();
